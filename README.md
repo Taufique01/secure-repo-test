@@ -6,7 +6,6 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ```$ npx create-react-app components-app```
 * Material-UI
 ```$ yarn add @material-ui/core```
-* React Notifications
 ```$ npm install --save react-notifications```
 * Promise Tracker
 ```$ npm install react-promise-tracker --save```
