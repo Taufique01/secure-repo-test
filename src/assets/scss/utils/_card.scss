@@ -1,0 +1,10 @@
+body {
+  .MuiCard-root {
+    border-radius: 20px;
+    -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
+    -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
+    border-color: $secondaryColor;
+    border-width: 10px;
+  }
+}

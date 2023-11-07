@@ -1,0 +1,625 @@
+.category-menu {
+  // padding: 20px;
+  width: calc(100% - 30px);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
+  border-radius: 20px;
+  h3 {
+    font-weight: $font-bold;
+    margin-bottom: 10px;
+    line-height: 1;
+    letter-spacing: normal;
+    padding: 20px 20px 0;
+  }
+  .MuiList-padding {
+    padding: 0;
+    a {
+      padding: 7px 20px;
+      @media screen and (min-width: 1024px) and (max-width: 1280px) {
+        padding: 8px 20px;
+      }
+      div {
+        margin: 0;
+        span {
+          line-height: 1;
+          letter-spacing: normal;
+          // font-size: 14px;
+          color: $primaryTextColor;
+          @media screen and (min-width: 1024px) and (max-width: 1280px) {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+  // ul {
+  //   li {
+  //     & + li {
+  //       margin-top: 10px;
+  //     }
+  //     a {
+  //       cursor: pointer;
+  //       color: $primaryTextColor;
+  //       // display: block;
+  //     }
+  //   }
+  // }
+}
+
+.payment-info-box {
+  padding: 30px 0;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
+  border-radius: 20px;
+  margin-top: 50px;
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
+  .box {
+    // width: calc(100% / 3);
+    padding: 25px 0px;
+    border-top: 1px solid #dbdbdb;
+    text-align: center;
+    @media screen and (min-width: 768px) and (max-width: 1023px) {
+      padding: 15px 0px;
+    }
+    @media screen and (min-width: 768px) {
+      border-left: 1px solid #dbdbdb;
+      border-top: 0;
+    }
+    &.no-border {
+      border-color: transparent;
+    }
+
+    .MuiAvatar-root {
+      width: 80px;
+      border-radius: 50%;
+      background-color: #c4c4c4;
+      height: 80px;
+      margin: 0 auto 20px;
+      font-size: 26px;
+      font-weight: $font-medium;
+      @media screen and (min-width: 768px) and (max-width: 1023px) {
+        width: 60px;
+        height: 60px;
+        font-size: 20px;
+        margin-bottom: 15px;
+      }
+    }
+
+    h3 {
+      font-weight: $font-medium;
+      color: #000;
+      margin-bottom: 10px;
+      @media screen and (min-width: 768px) and (max-width: 1023px) {
+        font-size: 14px;
+        margin-bottom: 5px;
+      }
+    }
+
+    p {
+      color: #000;
+      line-height: 24px;
+      @media screen and (min-width: 768px) and (max-width: 1023px) {
+        font-size: 14px;
+      }
+      span {
+        display: block;
+      }
+    }
+    & + .box {
+      border-left: 1px solid #dbdbdb;
+    }
+  }
+}
+
+.products-box {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
+  border-radius: 20px;
+  padding: 25px;
+  margin-top: 30px;
+  & + button {
+    margin: 30px auto 0;
+    display: block;
+    border-radius: 50px;
+    font-size: 16px;
+    width: 250px;
+    height: 50px;
+  }
+  h3 {
+    margin-bottom: 25px;
+    font-weight: $font-medium;
+    line-height: normal;
+    color: #000;
+    letter-spacing: normal;
+  }
+}
+
+body {
+  .slick-track {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .slick-prev {
+    right: 30px;
+    left: auto;
+    @media screen and (min-width: 768px) {
+      left: -50px;
+      right: auto;
+    }
+  }
+  .slick-next {
+    right: 0;
+    @media screen and (min-width: 768px) {
+      right: -50px;
+    }
+  }
+  .slick-arrow {
+    svg {
+      fill: #000;
+      display: block;
+      width: 20px;
+      height: auto;
+      font-size: 0;
+    }
+    &::before {
+      display: none;
+    }
+  }
+  .slick-arrow.slick-disabled {
+    opacity: 0.2;
+    pointer-events: none;
+    @media screen and (min-width: 768px) {
+      opacity: 0;
+    }
+  }
+  .slick-prev,
+  .slick-next {
+    background-color: #f4f4f4;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+    // background-color: red;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    @media screen and (max-width: 767px) {
+      top: -35px;
+      background-color: transparent;
+      width: auto;
+      height: auto;
+    }
+    &:hover {
+      background-color: #f4f4f4;
+    }
+    &:before {
+      color: #000;
+      opacity: 1;
+    }
+  }
+  .product-card {
+    box-shadow: none;
+    border-radius: 0;
+    background-color: transparent;
+
+    @media screen and (min-width: 481px) {
+      padding: 0 5px;
+    }
+
+    @media screen and (min-width: 768px) {
+      padding: 0 25px;
+    }
+
+    .MuiCardMedia-root {
+      width: 100%;
+      background-color: #d0d0d0;
+      height: 180px;
+      border-radius: 10px;
+      // border: 1px solid #f4f4f4;
+    }
+    .MuiCardContent-root {
+      padding: 0 !important;
+      .product-rating {
+        margin-top: 10px;
+        & > span {
+          margin-right: 5px;
+        }
+      }
+      .MuiTypography-root {
+        line-height: normal;
+        letter-spacing: normal;
+        &.description {
+          min-height: 38px;
+        }
+      }
+      h4 {
+        font-weight: $font-medium;
+        margin-bottom: 5px;
+        margin-top: 10px;
+      }
+      h5 {
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+
+.main-banner {
+  width: 100%;
+  background-color: #d0d0d0;
+  border-radius: 10px;
+  .slick-arrow {
+    z-index: 1;
+  }
+  .slick-dots {
+    bottom: 20px;
+    @media screen and (min-width: 768px) {
+      bottom: 30px;
+    }
+    li {
+      margin: 0 5px;
+      width: 10px;
+      height: 10px;
+      @media screen and (min-width: 768px) {
+        width: 15px;
+        height: 15px;
+      }
+      button {
+        background-color: #c4c4c4;
+        border-radius: 50%;
+        width: 100%;
+        height: 100%;
+        &:before {
+          display: none;
+        }
+      }
+      &.slick-active {
+        button {
+          background-color: #959595;
+        }
+      }
+    }
+  }
+  .slick-prev,
+  .slick-next {
+    box-shadow: none;
+    background-color: #c4c4c4;
+    &:hover {
+      background-color: #c4c4c4;
+    }
+  }
+  .slick-next {
+    right: 25px;
+  }
+  .slick-prev {
+    left: 25px;
+  }
+  .product-card {
+    position: relative;
+    padding: 0;
+    display: block !important;
+    text-align: center;
+    background-color: transparent;
+    .MuiCardMedia-root {
+      background-color: transparent;
+      height: 250px;
+      @media screen and (min-width: 768px) {
+        height: 412px;
+      }
+    }
+    .MuiCardActions-root {
+      padding: 0;
+      margin-top: 20px;
+      justify-content: center;
+      button {
+        font-size: 16px;
+        border-radius: 50px;
+        @media screen and (min-width: 768px) {
+          width: 140px;
+          height: 45px;
+        }
+      }
+    }
+    .MuiCardContent-root {
+      padding: 0 120px 0;
+      h2 {
+        font-size: 24px;
+        font-weight: $font-medium;
+        color: #fff;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+        @media screen and (min-width: 768px) {
+          font-size: 36px;
+        }
+      }
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+  @media screen and (min-width: 992px) {
+    .slick-slider {
+      height: 100%;
+      .slick-list {
+        height: 100%;
+        .slick-track {
+          height: 100%;
+          .slick-slide {
+            height: 100%;
+            & > div {
+              height: 100%;
+              .product-card {
+                height: 100%;
+                .MuiCardMedia-root {
+                  height: 100%;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.all-products {
+  @media screen and (min-width: 768px) {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 0px 0 50px;
+  }
+
+  &--filter {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding-bottom: 20px;
+
+    @media screen and (min-width: 768px) {
+      width: calc(100% - 50px);
+      border-bottom: 1px solid #dbdbdb;
+      margin-bottom: 50px;
+
+      padding: 25px 0;
+    }
+
+    p {
+      letter-spacing: normal;
+      font-size: 20px;
+      line-height: 1;
+      margin-bottom: 10px;
+      width: 100%;
+      font-weight: $font-medium;
+      @media screen and (min-width: 1280px) {
+        width: auto;
+        margin-bottom: 0;
+      }
+      small {
+        font-weight: $font-regular;
+        margin-left: 5px;
+        font-size: 14px;
+      }
+    }
+    form {
+      display: flex;
+      width: auto;
+      border: 1px solid #dbdbdb;
+      padding: 5px 15px;
+      align-items: center;
+      flex-grow: 1;
+      border-radius: 50px;
+      margin-right: 15px;
+      @media screen and (max-width: 500px) {
+        margin: 0 0 10px;
+      }
+      @media screen and (min-width: 1280px) {
+        border: none;
+        border-left: 1px solid #dbdbdb;
+        padding: 0 0 0 20px;
+        width: auto;
+        border-radius: 0;
+        margin-left: 30px;
+        margin-right: 0;
+      }
+      svg {
+        margin-right: 10px;
+      }
+    }
+  }
+
+  & > button {
+    margin: 25px auto 0;
+    display: block;
+    font-size: 16px;
+    height: 50px;
+    width: 250px;
+  }
+  .product-card {
+    margin-bottom: 25px;
+  }
+}
+
+.product-filters {
+  padding-right: 50px;
+  .filter-box {
+    border-bottom: 1px solid #dbdbdb;
+    padding: 30px 0;
+    .price-filter {
+      display: flex;
+      align-items: center;
+      & > span {
+        padding: 0 10px;
+      }
+      button {
+        margin-left: 10px;
+      }
+    }
+    & > button {
+      margin-top: 10px;
+    }
+  }
+  h3 {
+    font-size: 18px;
+    font-weight: $font-medium;
+  }
+  p {
+    margin-bottom: 10px;
+  }
+}
+
+.product-rating {
+  display: flex;
+  align-items: center;
+  .MuiRating-root {
+    color: #CD4A12;
+  }
+}
+
+.card-sorting {
+  display: flex;
+  align-items: center;
+  border: 1px solid #dbdbdb;
+  border-radius: 50px;
+  height: 45px;
+  padding: 0 20px;
+  @media screen and (max-width: 500px) {
+    width: 100%;
+  }
+  .MuiInput-underline::before,
+  .MuiInput-underline::after {
+    display: none;
+  }
+  .MuiSelect-select:focus {
+    border-radius: 0;
+    background-color: transparent;
+  }
+  label {
+    // font-size: 14px;
+    letter-spacing: normal;
+    margin-right: 10px;
+    line-height: 1;
+    white-space: nowrap;
+    color: #cbcbcb;
+  }
+}
+
+body {
+  .mobile-filter-icon {
+    width: 50px;
+    min-width: 1px;
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    z-index: 9;
+    height: 50px;
+  }
+
+  .MuiDrawer-paperAnchorBottom {
+    height: 100%;
+  }
+
+  .mobile-filters {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+
+    .MuiFormGroup-root {
+      align-items: flex-start;
+      label {
+        display: flex;
+        align-items: center;
+        span {
+          line-height: 1;
+        }
+      }
+    }
+
+    .tab-content {
+      width: calc(100% - 120px);
+      .price-filter {
+        & > span {
+          text-align: center;
+          display: block;
+          margin: 10px 0;
+        }
+      }
+      .MuiBox-root {
+        padding: 20px;
+        .MuiBox-root {
+          padding: 0;
+        }
+      }
+    }
+
+    &--footer {
+      height: 55px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      border-top: 1px solid #f1f1f1;
+      padding: 0 10px;
+    }
+
+    .MuiTabs-root {
+      // height: calc(100% - 48px);
+      height: calc(100% - (48px + 55px));
+      width: 120px;
+      background-color: #f1f1f1;
+    }
+
+    h3 {
+      display: flex;
+      align-items: center;
+      line-height: 1;
+      justify-content: space-between;
+      background-color: $primaryColor;
+      color: #fff;
+      // padding: 15px;
+      padding-left: 15px;
+      font-weight: $font-medium;
+      padding-right: 5px;
+      width: 100%;
+      .MuiIconButton-colorPrimary {
+        color: #fff;
+      }
+    }
+
+    .MuiTabs-indicator {
+      display: none;
+    }
+
+    .MuiTabs-flexContainer {
+      flex-direction: column;
+      .MuiTab-root {
+        padding: 15px;
+        min-width: 1px;
+        letter-spacing: normal;
+        width: auto;
+        justify-content: flex-start;
+        display: flex;
+        align-items: flex-start;
+        height: auto;
+        min-height: 1px;
+        // border-bottom: 1px solid #ccc;
+        text-transform: none;
+        line-height: 1;
+        font-weight: $font-regular;
+        opacity: 1;
+
+        &.Mui-selected {
+          background-color: #fff;
+          // border-color: #fff;
+        }
+        .MuiTab-wrapper {
+          width: auto;
+        }
+      }
+    }
+  }
+}
