@@ -13,7 +13,6 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 * Form Validation
 ```$ npm install react-material-ui-form-validator```
 * Amplify
-```$ yarn add aws-amplify aws-amplify-react```
 
 ## Structure and Environment
 ```
